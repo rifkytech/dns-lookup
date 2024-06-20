@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Simple PHP script to lookup entries of A, AAAA, NS, CNAME, MX, SOA and TXT records">
+        <meta name="description" content="dns lookup entries of A, AAAA, NS, CNAME, MX, SOA and TXT records">
         <meta name="author" content="HQWEB">
-        <title>Simple DNS Lookup</title>
+        <title>DNS Lookup - subnet.id</title>
         <link rel="icon" href="assets/favicon.ico"><!-- https://www.iconperk.com/iconsets/magicons -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap core CSS -->
         <link href="assets/css/style.css" rel="stylesheet"><!-- Custom styles for this template -->
@@ -16,17 +16,13 @@
             <div class="header clearfix">
                 <nav>
                     <ul class="nav nav-pills pull-right">
-                        <li role="presentation" ><a href="/">Outils</a></li>
-                        <li role="presentation" class="active"><a href="/dns-lookup">DNS Lookup</a></li>
+                        <li role="presentation" class="active"><a href="https://hostddns.us">VPN Remote</a></li>
                     </ul>
                 </nav>
-                <h3 class="text-muted">Simple DNS Lookup</h3>
+                <h3 class="text-muted">DNS Lookup</h3>
             </div>
             
             <?php
-                // ini_set('display_errors', 1); // Uncomment to display errors
-                // ini_set('display_startup_errors', 1); // Uncomment to display errors
-                // error_reporting(E_ALL); // Uncomment to display errors
 error_reporting (E_ERROR | E_PARSE);
                 
                 // If domain is included in URL, prefill form with domain or if form is submitted display domain in it
@@ -100,7 +96,7 @@ error_reporting (E_ERROR | E_PARSE);
                             class="form-control input-lg text-center"
                             name ="domain"
                             id="domain"
-                            placeholder="https://www.domain.com/page.html or domain.com"
+                            placeholder=" Example : domain.com"
                             value="<?=$value?>"
                             requirerd
                         >
@@ -113,7 +109,8 @@ error_reporting (E_ERROR | E_PARSE);
             
             <div class="row marketing">
                 
-                <h4>Direct link : <a href="<?=$page_url_domain?>"><?=$page_url_domain?></a></h4>
+<!--                 <h4>Direct link : <a href="<?=$page_url_domain?>"><?=$page_url_domain?></a></h4> -->
+                 <h4>Lookup information for <?=$domain?></h4> 
 
                 <table class="table table-striped table-bordered table-responsive">
                     <thead class="bg-primary">
@@ -358,7 +355,7 @@ error_reporting (E_ERROR | E_PARSE);
             <?php } ?> <!-- ENDIF FORM SUBMITTED -->
 
             <footer class="footer">
-                <p  class="text-center">&copy; Simple DNS Lookup - <a href="https://github.com/iSurcouf/Simple-DNS-Lookup">Sourcecode on GitHub</a></p>
+                <p  class="text-center">&copy; DNS Lookup - Hosted by <a href="https://hostddns.us">Freeddns Tunnel</a></p>
             </footer>
             </div> <!-- /container -->
     </body>

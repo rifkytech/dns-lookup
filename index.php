@@ -27,6 +27,7 @@
                 // ini_set('display_errors', 1); // Uncomment to display errors
                 // ini_set('display_startup_errors', 1); // Uncomment to display errors
                 // error_reporting(E_ALL); // Uncomment to display errors
+error_reporting (E_ERROR | E_PARSE);
                 
                 // If domain is included in URL, prefill form with domain or if form is submitted display domain in it
                 if( isset($_POST['domain']) )
